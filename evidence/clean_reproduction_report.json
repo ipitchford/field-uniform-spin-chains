@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-09-28T17:02:05.563350+00:00",
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "sympy": "1.14.0",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41"
+  },
+  "suites": [
+    {
+      "suite": "verify_integer.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 0.60094,
+      "report": "evidence/integer_report.json"
+    },
+    {
+      "suite": "verify_symbolic.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 1.757328,
+      "report": "evidence/symbolic_report.json"
+    },
+    {
+      "suite": "test_certifier.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 3.387064,
+      "report": "evidence/legacy_certifier_report.json"
+    },
+    {
+      "suite": "verify_extensions.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 5.140065,
+      "report": "evidence/extensions_report.json"
+    },
+    {
+      "suite": "verify_isotropic_independent.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 0.676269,
+      "report": "evidence/isotropic_independent_report.json"
+    },
+    {
+      "suite": "verify_dense_regression.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 10.577588,
+      "report": "evidence/dense_regression_report.json"
+    },
+    {
+      "suite": "test_field_uniform.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 4.02792,
+      "report": "evidence/new_certifier_report.json"
+    }
+  ],
+  "suite_count": 7,
+  "total_elapsed_seconds": 26.170725,
+  "assurance": "Exact finite algebra and regression checks; not formal proof verification or independent specialist review.",
+  "execution_mode": "Second run from a fresh ZIP extraction, after verifying all 52 original manifest entries. This report and its README/benchmark references were added after the clean run; mathematical inputs and programs were unchanged."
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Field-uniform nonintegrability of spin chains",
+  "creators": [
+    {
+      "name": "Anonymous"
+    }
+  ],
+  "description": "Unrefereed field-uniform local-charge exclusion candidate. Written proof and exact finite checks; no formal or external peer verification.",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "version": "1.0.1-candidate",
+  "doi": "10.5281/zenodo.23021227",
+  "license": "cc-zero",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/ipitchford/field-uniform-spin-chains",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

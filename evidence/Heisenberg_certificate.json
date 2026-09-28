@@ -1,0 +1,14 @@
+{
+  "evidence_kind": "exact recomputation report; optional portable witness proves only the quotient identity",
+  "range": "3 <= k <= floor(N/2), every periodic N >= 6",
+  "fields": "arbitrary site-dependent Hermitian on-site potentials, with no norm bound",
+  "arithmetic": "exact rational",
+  "dependency": "Hokkyo arXiv:2501.18400v3, Theorems 1 and 2, with hypotheses proved in the manuscript",
+  "u": "1",
+  "v": "0",
+  "isotropic_factor": "1",
+  "Delta_norm_squared": "40",
+  "status": "CERTIFIED_NO_LOCAL_CHARGES_3_TO_HALF",
+  "local_commutant": "span{I,H} plus uniform total-spin generators commuting with every on-site field",
+  "elapsed_seconds": 5.7e-05
+}

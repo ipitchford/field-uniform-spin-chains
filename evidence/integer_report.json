@@ -1,0 +1,138 @@
+{
+  "status": "PASS",
+  "arithmetic": "Python exact integers",
+  "checks": [
+    "integer witness is Hermitian",
+    "both one-site partial traces vanish",
+    "inversion / swap symmetry",
+    "27x27 double commutator gives the asserted 9x9 obstruction",
+    "obstruction Frobenius norm squared is 81962496",
+    "asserted interaction eigenvalues are nonzero with distinct squares",
+    "rational radius 1/10 passes the stated robustness inequality"
+  ],
+  "obstruction_diagonal": [
+    0,
+    3696,
+    -3696,
+    -3696,
+    0,
+    3696,
+    3696,
+    -3696,
+    0
+  ],
+  "obstruction_norm_squared": 81962496,
+  "orthonormal_interaction_eigenvalues": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    48
+  ],
+  "operator_norm_row_sum_bound": 34,
+  "h_star": [
+    [
+      11,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      5,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -16,
+      0,
+      0,
+      0,
+      9,
+      0,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      11,
+      0,
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -16,
+      0,
+      13,
+      0
+    ],
+    [
+      0,
+      0,
+      9,
+      0,
+      0,
+      0,
+      -16,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      13,
+      0,
+      -16,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      0,
+      32
+    ]
+  ],
+  "runner_elapsed_seconds": 0.053982
+}

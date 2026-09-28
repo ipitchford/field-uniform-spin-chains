@@ -1,0 +1,434 @@
+# Referee report
+
+**Manuscript:** *A field-independent cubic obstruction to local conservation in general spin-1 chains*
+**Version:** 0.1, 28 September 2026
+**Recommendation:** **Minor revisions**
+**Prospective REF assessment:** **3* overall — internationally excellent. A 4* overall classification is not yet sufficiently supported.**
+
+## 1. Executive assessment
+
+This is a substantive mathematical-physics paper, not merely a computational demonstration. Its strongest result is an explicit sufficient condition excluding finite-range conserved quantities, uniformly over **arbitrary site-dependent on-site fields**. With an additional simple-spectrum condition, it identifies the entire local commutant within the stated range as the span of the identity and Hamiltonian. The exact witness then establishes genericity in the unrestricted symmetric interaction space.
+
+I found **no fatal mathematical defect** in the submitted argument. The supplied verification suite passes, and separately written reviewer code confirms the witness and tests the cubic coefficient formula on additional dense interactions. The application of Hokkyo’s revised reduction appears to respect its essential hypotheses. ([arXiv][1])
+
+The principal weaknesses concern positioning and interpretation rather than proof repair. The manuscript needs an explicit comparison with recent Reshetikhin-condition results, recognition of the established quasicentroid theory underlying its rigidity lemma, and a concrete explanation of an important limitation: **the proposed obstruction vanishes throughout the isotropic spin-1 family**, including full-rank interactions. ([arXiv][2])
+
+My judgement is therefore favourable but bounded: this is a publishable, well-supported generic nonintegrability theorem after modest revision. Its field-uniform formulation and reusable certificate support a strong 3* assessment; the current evidence does not yet establish the exceptional originality or significance needed for 4* overall.
+
+## 2. Scope and evidence limits
+
+This review treats the submission as a **theoretical mathematical-physics research article with exact computational supplements**, intended for researchers in quantum spin chains, integrability and local conservation laws. No target journal was specified; I have applied the standard of a specialist research journal.
+
+I inspected the ten-page manuscript, LaTeX source, README, claim ledger, source audit, certificate inputs and outputs, verification programs and checksum manifest. All **18 manifest entries passed checksum verification**. I reran the supplied verification suite in a separate working copy and wrote an additional checker that imports none of the submitted programs.
+
+The review distinguishes three levels of assurance:
+
+* **Mathematical inspection:** examination of the submitted proofs and the hypotheses of the cited external reduction.
+* **Computational corroboration:** reproduction of supplied calculations and additional exact checks.
+* **Literature assessment:** a targeted live search, not an exhaustive historical-priority investigation.
+
+I have not formally verified the proofs or independently re-proved Hokkyo’s entire external theorem. The bundle’s references to an earlier “Problem 4” brief do not make that brief part of the present evidence; the paper is assessed against its explicit statements.
+
+The reviewer code, actual outputs and reproduction notes are available in the **[referee-check bundle](sandbox:/mnt/data/spin1_cubic_referee_checks_2026-09-28.zip)**.
+
+## 3. Contribution and positioning
+
+### Strongest defensible contribution
+
+For a homogeneous nearest-neighbour interaction
+
+$$
+h=\sum_{a,b}J_{ab}F_a\otimes F_b,
+\qquad J=J^{T}\in\mathbb R^{(d^2-1)\times(d^2-1)},
+$$
+
+the paper defines
+
+$$
+\mathcal O(h)=
+\operatorname{Tr}_{2}
+[h_{12}+h_{23},[h_{12},h_{23}]].
+$$
+
+The central result is the implication
+
+$$
+\det J\neq0,\qquad \mathcal O(h)\neq0
+\quad\Longrightarrow\quad
+\text{no conserved quantity of exact contiguous range }
+3\le k\le\lfloor N/2\rfloor,
+$$
+
+for every \(N\ge6\), **regardless of the on-site fields**.
+
+When \(J^2\) has simple spectrum, Theorem 2.2 strengthens this to
+
+$$
+\{Q:[H_N,Q]=0,\ \operatorname{len}(Q)\le\lfloor N/2\rfloor\}
+=\operatorname{span}_{\mathbb C}\{I,H_N\}.
+$$
+
+This is stronger than demonstrating that an energy-current candidate fails to commute with one field-free Hamiltonian. It excludes alternative shorter-range corrections and non-translation-invariant charges, and it applies simultaneously to unrestricted choices of the fields.
+
+### Where the contribution lies
+
+The paper’s contribution is the combination of:
+
+**Automatic verification of the reduction hypotheses.** Lemma 3.2 shows that full interaction rank supplies both boundary injectivity and one-dimensionality of the two-site leading solution space.
+
+**A field-insensitive projection.** Lemma 4.2 selects the component with traceless endpoints and an identity on the middle site. Neither on-site fields nor shorter-range corrections can repair a nonzero obstruction in that component.
+
+**Explicit genericity and certification.** The witness, polynomial exceptional set, perturbation ball and rational-input certifier turn the argument into a usable sufficient test.
+
+The all-range reduction is inherited from Hokkyo rather than newly established here. The nested commutator also belongs to the established Reshetikhin-condition framework. Neither fact makes the result redundant: the distinctive claim is the **field-uniform exclusion theorem obtained from this particular projection and rank argument**. ([arXiv][1])
+
+The manuscript generally represents its contribution accurately. In particular, its statements that the exceptional set is not the integrable locus, and that no thermalisation or quasilocal-charge conclusion follows, should be retained.
+
+## 4. Major comments
+
+### 4.1. Make the comparison with the Reshetikhin condition explicit
+
+**Issue.** The literature discussion does not adequately explain how the cubic obstruction relates to the full Reshetikhin condition and the directly relevant 2026 literature.
+
+**Manuscript evidence.** Section 1.1 cites the reduction and several spin-chain nonintegrability papers, while Section 6 develops the cubic formula. The supplementary source audit acknowledges possible prior appearances of a partial-trace projection, but the main text does not work through the comparison.
+
+The full condition is
+
+$$
+[h_{12}+h_{23},[h_{12},h_{23}]]=X_{23}-X_{12}.
+$$
+
+Sanatani, Shiraishi and Ishii’s July 2026 preprint states a sufficiency theorem for regular difference-form Yang–Baxter integrability, subject to its stated assumptions. Hokkyo’s published July 2026 paper establishes an integrability result from a specific conservation law. Both are important comparators. ([arXiv][2])
+
+**Why it matters.** Readers must distinguish three propositions: satisfying the full Reshetikhin identity; vanishing of the manuscript’s partial projection; and existence of arbitrary local conserved quantities. These are not interchangeable.
+
+**Required revision.** Add a short subsection showing that the appropriate projection of the full Reshetikhin identity forces \(\mathcal O(h)=0\), while explaining why its converse fails. Then identify the additional work performed by this paper: full-rank rigidity, elimination of correction terms, arbitrary-field uniformity and the resulting generic theorem.
+
+This is a **positioning requirement**, not a finding that the theorem has already been proved elsewhere. I did not identify a source establishing precisely the same field-uniform result.
+
+### 4.2. Give a concrete structural limitation: isotropic spin-1 interactions are invisible to this obstruction
+
+**Issue.** Section 10 acknowledges physically important exceptional families but does not identify a particularly consequential one.
+
+**Manuscript evidence.** The paper explicitly leaves the full-rank locus \(\mathcal O(h)=0\) unresolved and warns against treating lower-dimensional families as physically negligible. That warning is correct; a concrete example would make its practical implications clear.
+
+**Reviewer calculation.** Let
+
+$$
+B=S_x\otimes S_x+S_y\otimes S_y+S_z\otimes S_z
+$$
+
+in the spin-1 representation, and canonicalise the isotropic interaction as
+
+$$
+h(u,v)=uB+v\left(B^2-\frac43 I\right).
+$$
+
+My independent symbolic calculation gives
+
+$$
+\boxed{\mathcal O(h(u,v))\equiv0.}
+$$
+
+The normalised coupling matrix has eigenvalues
+
+$$
+v\quad\text{with multiplicity }5,\qquad
+2u-v\quad\text{with multiplicity }3,
+$$
+
+so
+
+$$
+\det J=v^5(2u-v)^3.
+$$
+
+Thus the blindness is **not merely caused by rank deficiency**.
+
+There is also a short conceptual explanation. The obstruction is invariant under simultaneous spin rotations and odd under exchange of its endpoints. But the spin-1 tensor square decomposes without multiplicities:
+
+$$
+V_1\otimes V_1=V_0\oplus V_1\oplus V_2.
+$$
+
+Every rotationally invariant two-site operator is therefore a linear combination of the total-spin projectors and commutes with endpoint exchange. An invariant, exchange-odd operator must vanish.
+
+For the canonicalised Affleck–Kennedy–Lieb–Tasaki interaction, \(u=1,\ v=1/3\), the independent checker finds
+
+$$
+\det J=\frac{125}{6561}\neq0,\qquad \mathcal O(h)=0.
+$$
+
+Moreover, projecting the **full** nested commutator onto traceless first and last sites gives squared Hilbert–Schmidt norm \(2560/81\), so the full Reshetikhin condition fails despite this partial obstruction vanishing. Existing work separately establishes the model’s absence of nontrivial local conserved quantities. ([arXiv][3])
+
+**Why it matters.** Full measure in an unrestricted parameter space does not imply broad coverage within symmetry-constrained physical model families.
+
+**Required revision.** Add the isotropic vanishing statement as a limitation and a regression test. This does not contradict the paper’s sufficient-condition theorem or require a classification of the exceptional set.
+
+### 4.3. Attribute the algebraic background of the pair-rigidity lemma
+
+**Issue.** The scalarity mechanism in Lemma 3.1 belongs to established quasicentroid theory.
+
+**Manuscript evidence.** The proof reduces the pair relation to
+
+$$
+[Rx,y]=[x,Ry],
+$$
+
+then establishes \(R=c\,\mathrm{id}\) by an elementary matrix-unit argument.
+
+**Why it matters.** For a centreless perfect Lie algebra, the equality of the quasicentroid and centroid is explicitly recalled in the literature; for a finite-dimensional complex simple Lie algebra the centroid is scalar. Andruszkiewicz, Brzeziński and Radziszewski state the relevant facts and identify the underlying Leger–Luks result. ([arXiv][4])
+
+**Required revision.** Retain the useful self-contained proof, but add attribution and locate the originality in the lemma’s application to the leading-charge equations, rather than in the underlying scalarity fact. The manuscript does not explicitly claim priority for that algebraic result, so this is a clarification, not a correction of an asserted priority claim.
+
+## 5. Rigour, results and inference
+
+### Definitions and parameterisation
+
+The canonical decomposition and the \(36+8=44\) parameter count are correct. The paper does not confuse an arbitrary orthogonal coordinate change in operator space with a physically implementable on-site unitary.
+
+The definition of **contiguous range** is particularly important and is handled correctly. A term
+
+$$
+A_i I_{i+1}B_{i+2}
+$$
+
+with nonzero traceless endpoints has range three, despite having only two nonidentity factors. The central argument would fail under a different locality convention; the manuscript makes its convention explicit.
+
+### Rigidity and the external reduction
+
+I found the proof of Lemma 3.1 sound. It uses the complex bilinear trace pairing consistently, treats the \(d=2\) case separately where necessary, and removes the residual diagonal components.
+
+Lemma 3.2 then correctly uses invertibility of \(J\) to convert the boundary equations into the pair-rigidity relation. Its conclusion applies to site-dependent two-site coefficients; translation invariance of a candidate charge is not silently imposed.
+
+The reduction in Proposition 4.1 matches the important distinctions in Hokkyo’s revised theorem:
+
+$$
+\text{no range-three }Q\text{ with }
+\operatorname{len}[H,Q]\le2
+$$
+
+is stronger than merely excluding exactly conserved range-three operators. The manuscript uses the stronger test and verifies both required hypotheses. The source’s setup permits nonuniform on-site terms, supporting the claimed field dependence. ([arXiv][1])
+
+This is the most important dependency check in the review. I found no unjustified leap from a small-chain calculation to the all-range theorem.
+
+### The identity-middle-site projection
+
+Lemma 4.2 is the main new mechanism, and its cancellation argument is coherent.
+
+Overlapping two-site correction terms contribute a traceless commutator on the middle site. On-site commutators preserve tracelessness of the three factors in the leading density. External adjacent bonds produce four-site strings with traceless factors. None contributes to the selected identity-middle-site component.
+
+The surviving contribution is therefore the insertion of \(I/d\) between the endpoint factors of \(c\mathcal O(h)\). The division by \(d\) is correct because the paper uses an **unnormalised** partial trace.
+
+Consequently, the contradiction \(c\mathcal O(h)=0\), with \(c\neq0\), is justified.
+
+### Elimination of residual short-range charges
+
+Theorem 2.2 is not inferred merely from the absence of higher-range charges. It has a separate argument.
+
+After subtracting \(cH_N\), the remaining on-site coefficients satisfy
+
+$$
+D_{x_i}J-JD_{x_{i+1}}=0.
+$$
+
+Taking transposes and using skew-symmetry gives
+
+$$
+[D_{x_i},J^2]=0.
+$$
+
+A complex skew-symmetric matrix commuting with a real symmetric matrix of simple spectrum must vanish. This establishes the claimed residual commutant.
+
+The use of **simple spectrum of \(J^2\)**, rather than merely of \(J\), is necessary for this argument and is correctly stated.
+
+### Computational audit
+
+| Check                         | Reviewer finding                                                                                  |
+| ----------------------------- | ------------------------------------------------------------------------------------------------- |
+| Original manifest             | All 18 listed hashes matched                                                                      |
+| Supplied verification suite   | Passed on rerun in a separate copy                                                                |
+| Integer witness               | Direct nested commutator and partial trace agree with the manuscript                              |
+| Eight-parameter factorisation | Supplied symbolic verification passed                                                             |
+| Pair-rigidity certificate     | Supplied computation reproduced rank 127 and the stated nonzero minor modulo 101                  |
+| Additional dense interactions | Separately written code confirmed Proposition 6.1 on three new dense integer coefficient matrices |
+| Spin-\(\tfrac12\) controls    | Three independent symmetric-coupling examples gave zero obstruction                               |
+| Isotropic spin-1 family       | Independent symbolic check gave identically zero obstruction and the determinant formula above    |
+
+The independent dense checks corroborate the formula; they are **not** a symbolic proof in all 36 interaction variables. The general statement remains supported by the analytic contraction argument in Proposition 6.1.
+
+The witness was independently recovered as
+
+$$
+\mathcal O(h_*)=
+3696\,\operatorname{diag}(0,1,-1,-1,0,1,1,-1,0).
+$$
+
+Hence
+
+$$
+\|\mathcal O(h_*)\|_F^2
+=6(3696)^2
+=81\,962\,496,
+$$
+
+and
+
+$$
+\|\mathcal O(h_*)\|_F\approx9053.314089.
+$$
+
+### Genericity, robustness and higher dimension
+
+The polynomial degree is correct:
+
+$$
+8+112+6=126.
+$$
+
+The three contributions are the determinant, the discriminant of \(J^2\), and the squared cubic obstruction. The explicit nonzero witness therefore proves that the exceptional algebraic set is proper. The open-dense and full-measure conclusions follow; they are not inferred from random sampling.
+
+For the perturbation ball, the stated bound evaluates to
+
+$$
+8\cdot3\cdot0.1(35^2+35\cdot34+34^2)
+=8570.4
+<9053.314089.
+$$
+
+The spectral-gap estimates also preserve invertibility and distinct squared eigenvalues. The radius is conservative but valid.
+
+The extension to \(d\ge3\) is credible: the embedded qutrit witness retains a nonzero obstruction, and sufficiently small distinct positive coefficients in the complementary coordinates give full rank and simple spectrum.
+
+### Inference boundaries
+
+The results justify a generic theorem about **strictly local conservation within the stated range**. They do not justify a complete integrability classification, thermalisation, chaotic level statistics, absence of quasilocal charges, or absence of higher-range conserved operators. The manuscript already observes these boundaries.
+
+## 6. External literature check
+
+**Review date:** 28 September 2026.
+**Sources searched:** live web search, arXiv records and full texts, APS publisher records, and official REF guidance.
+
+Searches combined the manuscript’s principal concepts—spin-1 nonintegrability, local conserved quantities, Hokkyo’s reduction, the Reshetikhin condition, pair rigidity and quasicentroids—with exact-title searches and citation following. Inclusion prioritised sources capable of changing the validity, novelty or scope assessment.
+
+**Hokkyo (2025), revised reduction.** This is the load-bearing external source. I checked its setup, locality definitions, hypotheses and relevant theorem statements in the full text. Its distinction between a conserved three-site operator and a three-site operator whose commutator has range at most two is faithfully reflected in the submission. ([arXiv][1])
+
+**Hokkyo, Sanatani and Chiba (2025).** The current abstract and publication record establish that the earlier work covers both the bilinear–biquadratic model and generic anisotropic models with additional internal symmetries. The manuscript correctly avoids describing that literature as confined to the isotropic family. Its unrestricted generic theorem nevertheless does not replace those symmetry-family classifications. ([arXiv][3])
+
+**Sengoku and Watanabe (2026).** The abstract describes additional \(U(1)\)-symmetric families with some vanishing quadrupolar couplings and a periodic Motzkin application. This supports treating exceptional families as substantive research targets rather than dismissing them because they occupy lower-dimensional sets. This comparison was abstract-based. ([arXiv][5])
+
+**Shiraishi and Yamaguchi (2026).** The published abstract gives an isotropic arbitrary-spin dichotomy. It is complementary to, not subsumed by, the present certificate. The publisher record also reveals the manuscript’s incorrect second-author attribution. ([APS Journals][6])
+
+**Hokkyo (2026) and Sanatani, Shiraishi and Ishii (2026).** These are the most important omitted contemporary comparisons. I consulted the former’s published abstract and the latter’s full-text formulation and theorem. They sharpen the significance of the full Reshetikhin condition but do not, by themselves, establish the manuscript’s arbitrary-field obstruction theorem. I have not independently audited their complete proofs. ([APS Journals][7])
+
+**Algebraic and historical background.** The relevant quasicentroid statements were checked in the full text of Andruszkiewicz et al. The abstract and bibliographic record of Grabowski and Mathieu’s integrability-test paper were also consulted to anchor the earlier local-conservation testing programme. ([arXiv][4])
+
+**Conclusion:** no direct duplication of the complete submitted theorem was identified. That is a targeted-search result, not a definitive priority certificate.
+
+## 7. Minor comments
+
+**Correct the bibliography.** The isotropic dichotomy paper is by **Naoto Shiraishi and Mizuki Yamaguchi**, not Shiraishi and Sanatani. Correct both the manuscript bibliography and `evidence/source_audit.md`. The DOI and journal coordinates point to the intended paper. ([APS Journals][6])
+
+**Improve terminology around the cubic matrix.** In Section 6, explicitly remind readers that a real skew-symmetric *coefficient matrix* does not make \(\mathcal O(h)\) anti-Hermitian. The tensor factors are Hermitian, and the resulting operator is Hermitian and exchange-odd.
+
+**Make the algorithmic claims measurable.** “Inexpensive” in Section 10 would benefit from one runtime example and a brief statement separating fixed local-dimension cost from chain-length independence. This is not a correctness problem.
+
+**Strengthen the regression suite.** Add a direct-versus-structure-constant comparison for a dense interaction and the isotropic negative control. The reviewer bundle supplies working examples.
+
+**Prepare the release artefact.** Before public release, add an explicit software licence and persistent archive identifier. Keep the distinction between separately implemented checkers, independent reviewer checks and formal proof verification.
+
+## 8. Prioritised revision plan
+
+### Must fix before publication
+
+Correct the author attribution and revise the literature discussion to distinguish the partial obstruction from the full Reshetikhin condition, including the two relevant 2026 contributions. Attribute the established algebraic background of the rigidity lemma. These are bounded scholarly revisions; the main theorems need not be weakened on the evidence examined.
+
+### Should fix to strengthen the paper
+
+Add the isotropic vanishing remark and exact negative control. Include the independent dense-formula regression test. Sharpen the contribution statement around what is genuinely distinctive: **a field-uniform sufficient certificate, with automatic reduction hypotheses and explicit genericity**.
+
+### Could improve presentation or future work
+
+Add benchmark timings and release metadata. For a stronger subsequent paper, investigate a concrete component of the full-rank \(\mathcal O(h)=0\) locus or construct an additional projection that detects an important family invisible to the present test. A complete exceptional-set classification is not a prerequisite for publishing this paper.
+
+## 9. Editorial recommendation
+
+**Minor revisions.**
+
+The central mathematical argument survived this review, and the computational claims tested were reproducible. I do not see a basis for requiring new numerical experiments, a redesign of the proof, or a complete classification before publication.
+
+The substantive comments concern proper placement within the literature and an informative limitation that can be incorporated without changing the theorems. Their importance does not automatically make the appropriate decision “major revisions”.
+
+**Confidence:** high in the finite algebra and the internal proof structure; moderately high in the application of the cited reduction; moderate in the originality assessment.
+
+The recommendation would change if a precise earlier theorem were shown to imply the same arbitrary-field result with no substantive additional argument, or if a specialist identified a mismatch in the all-range dependency. Neither was found here.
+
+## 10. Provisional REF calibration
+
+### Basis of assessment
+
+The most natural calibration is **UoA 10, Mathematical Sciences**, with **UoA 9, Physics** also plausible. Both sit within Main Panel B under the retained REF 2029 structure. ([REF 2029][8])
+
+The current REF 2029 overview consulted still describes detailed panel criteria and the quality-rating system as forthcoming. Accordingly, this is an indicative assessment using the established star definitions and published REF 2021 Main Panel B descriptors, not a claim to apply finalised 2029 discipline-specific criteria. ([REF 2029][9])
+
+Those descriptors distinguish important contributions with likely lasting influence from work with the potential to set a research agenda, introduce exceptionally novel techniques or exert major influence. They permit assessment of potential; an existing citation record is not required to demonstrate future importance. ([REF 2021][10])
+
+| Dimension                  | Provisional grade | Rationale                                                                                                                                                                                                                                                             | Confidence      |
+| -------------------------- | ----------------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| **Originality**            |            **3*** | A potentially important new combination of full-rank rigidity, a correction-insensitive projection and arbitrary-field uniformity. The foundational reduction and algebraic ingredients are established, and the exact novelty boundary needs clearer comparison.     | Moderate        |
+| **Significance**           |            **3*** | A reusable theorem across unrestricted symmetric interactions and all local dimensions \(d\ge3\), rather than another isolated model calculation. However, the certificate is blind to a major physical family and does not classify its exceptional set.             | Moderate        |
+| **Rigour**                 |            **4*** | Exceptionally transparent proof dependencies, explicit hypotheses and range restrictions, exact certificates, successful reruns and additional independent checks. This judgement concerns the submitted argument’s methodological standard, not formal verification. | Moderately high |
+| **Overall output quality** |            **3*** | A strong internationally excellent contribution. The evidence for world-leading originality or significance is presently less secure than the evidence for rigorous execution.                                                                                        | Moderate        |
+
+These separate scores are diagnostic judgements, **not an arithmetic formula** for the overall grade.
+
+### Why not 4* overall?
+
+The main obstacle is not paper length, lack of a journal venue, or absence of formalisation. It is that the paper has not yet demonstrated a sufficiently exceptional advance over the now-developed local-conservation and Reshetikhin framework to make the strongest quality judgement convincing.
+
+A stronger 4* case could arise from establishing the theorem’s distinctiveness and showing that it materially changes what can be proved—for example, through substantial new coverage of an unresolved family or a genuinely more complete structural criterion. Additional verification alone would improve assurance but would not automatically raise significance.
+
+**Present assessment: a strong 3* candidate, with 4*-level rigour, rather than a securely 4* output overall.** This is not an official panel decision and does not determine REF submission eligibility.
+
+## 11. References
+
+### Local conservation and integrability
+
+Grabowski, M. P., & Mathieu, P. (1995). Integrability test for spin chains. *Journal of Physics A: Mathematical and General, 28*, 4777–4798. DOI: 10.1088/0305-4470/28/17/013. ([arXiv][11])
+
+Hokkyo, A. (2025). *Rigorous test for quantum integrability and nonintegrability* (Version 3) [Preprint]. arXiv:2501.18400. ([arXiv][1])
+
+Hokkyo, A. (2026). Integrability from a single conservation law in quantum spin chains. *Physical Review B, 114*, 055108. DOI: 10.1103/y66t-t8zw. ([APS Journals][7])
+
+Hokkyo, A., Sanatani, M., & Chiba, Y. (2025). Absence of nontrivial local conserved quantities in the spin-1 bilinear-biquadratic chain and its anisotropic extensions. *Physical Review Research, 7*, 043297. DOI: 10.1103/vjtq-sz21. ([arXiv][3])
+
+Sanatani, M., Shiraishi, N., & Ishii, F. (2026). *A simple necessary and sufficient condition for Yang–Baxter integrability* [Preprint]. arXiv:2607.29660. ([arXiv][2])
+
+Sengoku, S., & Watanabe, H. (2026). *Absence of nontrivial local conserved quantities in a class of \(U(1)\)-symmetric spin-1 chains* [Preprint]. arXiv:2608.17548. ([arXiv][5])
+
+Shiraishi, N., & Yamaguchi, M. (2026). Dichotomy theorem separating complete integrability and nonintegrability of isotropic spin chains. *Physical Review B, 113*, L241111. DOI: 10.1103/lcn4-tbcm. ([APS Journals][6])
+
+### Algebraic background
+
+Andruszkiewicz, R. R., Brzeziński, T., & Radziszewski, K. (2024). *Lie affgebras vis-à-vis Lie algebras* [Preprint]. arXiv:2409.01996. DOI: 10.48550/arXiv.2409.01996. ([arXiv][12])
+
+### Research assessment
+
+Research Excellence Framework. (2019). *Panel criteria and working methods* (REF 2019/02), Main Panel B, paragraph 202. ([REF 2021][10])
+
+Research Excellence Framework. (2025). *Section 1—Overview: REF 2029* (updated 10 December 2025). ([REF 2029][9])
+
+Research Excellence Framework. (n.d.). *Units of assessment: REF 2029*. Retrieved 28 September 2026. ([REF 2029][8])
+
+[1]: https://arxiv.org/html/2501.18400v3 "https://arxiv.org/html/2501.18400v3"
+[2]: https://arxiv.org/html/2607.29660v1 "https://arxiv.org/html/2607.29660v1"
+[3]: https://arxiv.org/abs/2411.04945v4 "https://arxiv.org/abs/2411.04945v4"
+[4]: https://arxiv.org/html/2409.01996v1 "https://arxiv.org/html/2409.01996v1"
+[5]: https://arxiv.org/abs/2608.17548 "https://arxiv.org/abs/2608.17548"
+[6]: https://link.aps.org/doi/10.1103/lcn4-tbcm "https://link.aps.org/doi/10.1103/lcn4-tbcm"
+[7]: https://link.aps.org/doi/10.1103/y66t-t8zw "https://link.aps.org/doi/10.1103/y66t-t8zw"
+[8]: https://2029.ref.ac.uk/panels/units-of-assessment/ "https://2029.ref.ac.uk/panels/units-of-assessment/"
+[9]: https://2029.ref.ac.uk/guidance/section-1-overview/ "https://2029.ref.ac.uk/guidance/section-1-overview/"
+[10]: https://2021.ref.ac.uk/media/1450/ref-2019_02-panel-criteria-and-working-methods.pdf "https://2021.ref.ac.uk/media/1450/ref-2019_02-panel-criteria-and-working-methods.pdf"
+[11]: https://arxiv.org/abs/hep-th/9412039 "https://arxiv.org/abs/hep-th/9412039"
+[12]: https://arxiv.org/abs/2409.01996 "https://arxiv.org/abs/2409.01996"

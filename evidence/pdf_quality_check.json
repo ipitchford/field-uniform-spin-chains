@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-09-28T17:01:24.125687+00:00",
+  "pdf_sha256": "cdf6f1b1a257715290b783304e883ccb4a10876bec095aab7471d74e8286c892",
+  "pages": 16,
+  "renderer": "pdftoppm, 120 dpi",
+  "visual_inspection": "All sixteen pages inspected in four rendered contact sheets; no clipping, overlap or broken glyphs observed.",
+  "latex_warnings": [],
+  "unresolved_cross_references": false,
+  "page_checks": [
+    {
+      "page": 1,
+      "text_characters": 2863,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "bb3a3d5615e6e2fcc88c34af6a9885ee5b5541098f413d5b65aeb29fbf79043c"
+    },
+    {
+      "page": 2,
+      "text_characters": 3281,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "4963d08a258796c60b0ef5b573dacf72f59db7d484a5cfc7cfa20a41e6e735b9"
+    },
+    {
+      "page": 3,
+      "text_characters": 2992,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "9c6729a9de9d93a0dcd7b11034ddaf3e575924524706058e957333b8ac2fde49"
+    },
+    {
+      "page": 4,
+      "text_characters": 2427,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "41daea8f491b1d56ebca83fd02aa8cf0ad1c35c2a54c2c6429671d613757433e"
+    },
+    {
+      "page": 5,
+      "text_characters": 2812,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "04f811476574947eb116ef87fef94ed69cd3d72a503e64669c2729fab2ba7315"
+    },
+    {
+      "page": 6,
+      "text_characters": 2394,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "42785d4bc745d2257cdc1dda2a84122186460f02228708682c9abe32475d9da0"
+    },
+    {
+      "page": 7,
+      "text_characters": 2584,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "8a184bd44508f6efb41d2ac0663fbe9dfc3f87ee10d9b1a6dc1f27b7eb0506c0"
+    },
+    {
+      "page": 8,
+      "text_characters": 2770,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "19aaa71c5992202a9d4330d562dbb4805da6b01ca72a94e7066e99dfe394fe14"
+    },
+    {
+      "page": 9,
+      "text_characters": 2864,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "893233b96f3d9cfd0a4bb507b4c0ee7e7ae1e6c564c3a76884eca3972dd78a36"
+    },
+    {
+      "page": 10,
+      "text_characters": 2972,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "924dee0135455a43e7657e75255ca433bbf9e899b98e15e9aa39bb57310f78af"
+    },
+    {
+      "page": 11,
+      "text_characters": 3025,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "49decb779195fc2cbbc50afb00aa198f2f891b189b2149c1aac54451d0e06058"
+    },
+    {
+      "page": 12,
+      "text_characters": 3670,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "f7e4c825687330b873d12297a7579f8c31f8871a7d4863a081dfaadc34acadf4"
+    },
+    {
+      "page": 13,
+      "text_characters": 2919,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "4f97e34bd099dd30054b0a2f98bb304a42adf8c46d07f757157132478988c916"
+    },
+    {
+      "page": 14,
+      "text_characters": 2070,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "d16451b443d443a4f7315dc29078d117e1b724510de1030bf97b193100383365"
+    },
+    {
+      "page": 15,
+      "text_characters": 2872,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "1e19edda611770d8871978a93d876a982ea190039296fedb5ab9418ec53e6b36"
+    },
+    {
+      "page": 16,
+      "text_characters": 1452,
+      "out_of_page_spans": 0,
+      "rendered": true,
+      "render_sha256": "12b0d74f38c1194b68c1e3c5cd2f324953a004b9fb2210caac5e9062fe2797f8"
+    }
+  ],
+  "limits": "Layout and basic text-boundary checks, not a mathematical check, PDF accessibility certification or formal verification."
+}

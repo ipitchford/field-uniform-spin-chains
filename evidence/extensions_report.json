@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational / Gaussian rational / polynomial / prime field",
+  "elapsed_seconds": 4.172425,
+  "checks": {
+    "isotropic_polynomial": {
+      "identity": "Delta = u*(u-v)*(u+v)*W",
+      "norm_W_squared": 40,
+      "old_obstruction": "identically zero",
+      "AKLT_Delta_norm_squared": "2560/81",
+      "det_J": "v^5*(2*u-v)^3"
+    },
+    "isotropic_dual": {
+      "correction_polynomials_checked": 28,
+      "field_polynomials_checked": 8
+    },
+    "integrable_positive_controls": [
+      {
+        "u": 0,
+        "v": 1,
+        "Reshetikhin": true,
+        "C_nonzero": true
+      },
+      {
+        "u": 1,
+        "v": 1,
+        "Reshetikhin": true,
+        "C_nonzero": true
+      },
+      {
+        "u": 1,
+        "v": -1,
+        "Reshetikhin": true,
+        "C_nonzero": true
+      }
+    ],
+    "rank_deficient_leading_hypotheses": {
+      "Heisenberg": {
+        "matrix_shape": [
+          729,
+          128
+        ],
+        "minor_order": 127,
+        "prime": 101,
+        "minor_determinant": 73,
+        "rank_Q": 127,
+        "boundary_ranks": [
+          8,
+          8
+        ],
+        "exact_kernel": "(h,h)"
+      },
+      "rank5": {
+        "matrix_shape": [
+          729,
+          128
+        ],
+        "minor_order": 127,
+        "prime": 101,
+        "minor_determinant": 59,
+        "rank_Q": 127,
+        "boundary_ranks": [
+          8,
+          8
+        ],
+        "exact_kernel": "(h,h)"
+      }
+    },
+    "blind_hypersurface_witnesses": {
+      "gapzero_cartan": {
+        "input_diagonal_G": [
+          1,
+          2,
+          24,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "old_obstruction": 0,
+        "rank_T_Q": 36,
+        "rank_augmented_Q": 37,
+        "minor_order": 37,
+        "minor_determinant_mod101": 43,
+        "bond_stabilizer_rank_Q": 16
+      },
+      "gapzero_product": {
+        "input_diagonal_G": [
+          1,
+          2,
+          3,
+          4,
+          15,
+          5,
+          12,
+          8
+        ],
+        "old_obstruction": 0,
+        "rank_T_Q": 36,
+        "rank_augmented_Q": 37,
+        "minor_order": 37,
+        "minor_determinant_mod101": 64,
+        "bond_stabilizer_rank_Q": 16
+      }
+    }
+  },
+  "runner_elapsed_seconds": 4.499807
+}

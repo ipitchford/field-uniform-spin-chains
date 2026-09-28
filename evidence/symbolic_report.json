@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "arithmetic": "exact symbolic",
+  "checks": [
+    "rational Hermitian traceless orthogonal basis and its Gram matrix",
+    "Gell-Mann interaction (1,...,8) equals the integer witness",
+    "orthonormal interaction eigenvalues follow from exact Gram normalization",
+    "complete eight-variable symbolic cubic identity; all other coefficients zero",
+    "24 single-site basis commutators have zero middle trace at the witness",
+    "128 overlapping two-site basis corrections have zero middle trace",
+    "independent rank-127 certificate for the sl_3 pair-rigidity lemma"
+  ],
+  "symbolic_coefficient": "4*(j3 - 3*j8)*(j4*j5 - j6*j7)",
+  "nonzero_basis_pairs_one_based": [
+    [
+      3,
+      8
+    ],
+    [
+      8,
+      3
+    ]
+  ],
+  "pair_rigidity": {
+    "rows": 512,
+    "columns": 128,
+    "rank_over_Q": 127,
+    "minor_order": 127,
+    "prime": 101,
+    "minor_determinant_mod_prime": 32,
+    "kernel_vector": "(Id,Id)"
+  },
+  "runner_elapsed_seconds": 1.448389
+}

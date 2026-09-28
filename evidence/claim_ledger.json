@@ -1,0 +1,149 @@
+{
+  "release": "1.0.0",
+  "date": "2026-09-28",
+  "status_ladder": {
+    "proved": "Analytic argument supplied; external theorem dependencies explicit.",
+    "exactly_checked": "Finite certificate reconstructed with exact arithmetic.",
+    "not_claimed": "Formal verification, fresh independent refereeing, complete unrestricted classification, confirmed priority, or an official REF grade."
+  },
+  "claims": [
+    {
+      "id": "Q1",
+      "location": "Theorem 3.2",
+      "title": "Exact field-eliminated quotient",
+      "statement": "For leading-rigid Hermitian swap-symmetric h, quotient vanishing iff some fields admit an exact-range-three Q with commutator range at most two; homogeneous fields suffice for every N >= 6.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Analytic proof: anti-Hermitian normalisation, averaging leading equations, reversal projection, local converse.",
+      "dependencies": [
+        "Hokkyo v3 Theorems 1 and 2",
+        "leading rigidity"
+      ],
+      "limits": [
+        "Almost-conservation is not exact conservation."
+      ]
+    },
+    {
+      "id": "Q2",
+      "location": "Theorem 4.1",
+      "title": "Multiplicity-free symmetry evaluation",
+      "statement": "For irreducible compact G with multiplicity-free V tensor V and invariant leading-rigid h, U(h)=Delta(h); nonzero Delta excludes all stated higher-range charges for every site-dependent Hermitian field.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Analytic Haar-averaging/orthogonality proof.",
+      "dependencies": [
+        "Q1"
+      ],
+      "limits": [
+        "Fields need not preserve G.",
+        "No unconditional claim for rank-deficient higher-spin interactions."
+      ]
+    },
+    {
+      "id": "I1",
+      "location": "Proposition 5.1",
+      "title": "Isotropic polynomial identity",
+      "statement": "Delta(h(u,v))=u*(u-v)*(u+v)*W, norm(W)^2=40; O(h(u,v))=0.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Full symbolic identity plus separately implemented four integer coefficient matrices.",
+      "dependencies": [
+        "evidence/isotropic_W.json"
+      ],
+      "limits": [
+        "Cartesian basis and unnormalised traces fixed."
+      ]
+    },
+    {
+      "id": "I2",
+      "location": "Lemma 5.2",
+      "title": "Rank-deficient leading rigidity",
+      "statement": "Both h(1,0) and h(1,2) have one-dimensional local pair kernels and injective endpoints.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "127-minors modulo 101, known exact kernel vectors, and rank-8 boundary maps.",
+      "dependencies": [
+        "evidence/Heisenberg_pair.json",
+        "evidence/rank5_pair.json"
+      ],
+      "limits": [
+        "Ranks proved over characteristic zero, not inferred from vanishing modular minors."
+      ]
+    },
+    {
+      "id": "I3",
+      "location": "Theorem 5.3",
+      "title": "Complete isotropic field-existence criterion",
+      "statement": "For nonzero h(u,v), some fields admit a conserved charge of range 3..floor(N/2) iff u*(u-v)*(u+v)=0. Off those lines every field choice is excluded, for every N >= 6.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Analytic symmetry theorem, polynomial identity, rank-deficient closure, telescoping positive-ray current.",
+      "dependencies": [
+        "Q2",
+        "I1",
+        "I2"
+      ],
+      "limits": [
+        "Does not classify every individual field on the three charge-admitting lines."
+      ]
+    },
+    {
+      "id": "I4",
+      "location": "Theorem 5.4",
+      "title": "Exact residual isotropic local commutant",
+      "statement": "Off the three charge-admitting lines, all charges of range <= floor(N/2) are I, H and uniform spin generators commuting with every field.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Analytic bond-stabilizer proof using transpose-parity sectors and distinct squared sector eigenvalues.",
+      "dependencies": [
+        "I3",
+        "leading rigidity"
+      ],
+      "limits": [
+        "No claim outside the stated range."
+      ]
+    },
+    {
+      "id": "G1",
+      "location": "Theorem 6.3",
+      "title": "Retained unrestricted generic theorem",
+      "statement": "An open dense full-measure interaction set in every d >= 3 has local commutant span(I,H), for all N >= 6 and all fields.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Cubic witness and nonzero polynomial argument; higher-d embedding.",
+      "dependencies": [
+        "Hokkyo v3",
+        "full-rank rigidity",
+        "gap obstruction",
+        "short-charge lemma"
+      ],
+      "limits": [
+        "Not a full exceptional-set classification."
+      ]
+    },
+    {
+      "id": "B1",
+      "location": "Theorem 7.1",
+      "title": "Generic coverage of both diagonal blind hypersurfaces",
+      "statement": "Relative Zariski-open full-measure regular subsets of j3=3*j8 and j4*j5=j6*j7 have local commutant span(I,H) under every field choice.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Two 37-minors, degree-47 restriction argument, abelian-eigenspace short-charge lemma.",
+      "dependencies": [
+        "Q1",
+        "evidence/gapzero_cartan_minor.json",
+        "evidence/gapzero_product_minor.json"
+      ],
+      "limits": [
+        "Inside the fixed eight-parameter diagonal-G family; not the full 36-parameter exceptional locus."
+      ]
+    },
+    {
+      "id": "R1",
+      "location": "Proposition B.1",
+      "title": "Retained robust neighbourhood",
+      "statement": "The Frobenius ball of radius 1/10 around h_star, within canonical Hermitian swap-symmetric interactions, has the full commutant conclusion.",
+      "status": "proved with stated dependencies; finite algebra checked where applicable",
+      "proof_or_evidence": "Norm difference bound 8570.4 < sqrt(81962496), spectral separation.",
+      "dependencies": [
+        "G1",
+        "explicit integer witness"
+      ],
+      "limits": [
+        "Conservative sufficient radius, not maximal."
+      ]
+    }
+  ]
+}

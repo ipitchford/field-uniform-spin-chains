@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "cases": 4,
+  "semantic_negative_controls": 16,
+  "scope": "Quotient identities and tamper rejection; not universal theorem verification",
+  "runner_elapsed_seconds": 8.172549
+}

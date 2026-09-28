@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "implementation": "standard library only; no submitted module imports",
+  "arithmetic": "integers and prime-field integers",
+  "isotropic_cubic_coefficients": [
+    "W",
+    "0",
+    "-W",
+    "0"
+  ],
+  "norm_W_squared": 40,
+  "old_obstruction_coefficients_all_zero": true,
+  "pair_certificates": {
+    "Heisenberg": {
+      "minor_order": 127,
+      "determinant_mod101": 73,
+      "rank_Q": 127
+    },
+    "rank5": {
+      "minor_order": 127,
+      "determinant_mod101": 59,
+      "rank_Q": 127
+    }
+  },
+  "elapsed_seconds": 0.072212,
+  "runner_elapsed_seconds": 0.11495
+}

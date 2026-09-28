@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Cite this unrefereed candidate at the exact version."
+title: "Field-uniform nonintegrability of spin chains"
+version: "1.0.1-candidate"
+date-released: 2026-09-28
+type: article
+authors:
+  - name: Anonymous
+doi: 10.5281/zenodo.23021227
+repository-code: https://github.com/ipitchford/field-uniform-spin-chains
+license: CC0-1.0

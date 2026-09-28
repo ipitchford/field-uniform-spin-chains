@@ -1,0 +1,22 @@
+{
+  "title": "Field-uniform nonintegrability of spin chains",
+  "version": "1.0.1-candidate",
+  "date": "2026-09-28",
+  "project": "Evidence Press",
+  "personal_authors_assigned": false,
+  "status": "Unrefereed candidate with producer-side replay",
+  "manuscript": "paper.pdf",
+  "source": "paper.tex",
+  "software_license": "MIT",
+  "manuscript_license": "CC0-1.0; third-party records excluded",
+  "external_archive_deposit_performed": null,
+  "persistent_identifier": "10.5281/zenodo.23021227",
+  "doi": "10.5281/zenodo.23021227",
+  "new_theorems_independently_refereed": false,
+  "proof_assistant_formalization": false,
+  "earlier_review": "review/referee_report_v0_1.txt",
+  "remaining_administrative_step": "Public provider state is recorded separately in release receipts; reservation alone is not publication.",
+  "remaining_assurance_step": "Fresh independent specialist review of the new theorems and historical-priority assessment.",
+  "ref_grade_claimed": null,
+  "scholarly_creator": "Anonymous"
+}

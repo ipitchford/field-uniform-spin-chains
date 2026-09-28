@@ -1,0 +1,1 @@
+Publication replay: Python 3.13.5, SymPy 1.14.0, macOS arm64. requirements.txt pins SymPy. GitHub CI uses Python 3.13 on Ubuntu. PDF export uses pdfLaTeX/TeX Live; not a hermetic typesetting environment.

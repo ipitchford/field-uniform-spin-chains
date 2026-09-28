@@ -1,0 +1,70 @@
+{
+  "status": "PASS",
+  "date_utc": "2026-09-28T17:41:23.097041+00:00",
+  "environment": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O"
+  },
+  "suites": [
+    {
+      "suite": "verify_integer.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 0.053982,
+      "report": "evidence/integer_report.json"
+    },
+    {
+      "suite": "verify_symbolic.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 1.448389,
+      "report": "evidence/symbolic_report.json"
+    },
+    {
+      "suite": "test_certifier.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 2.598234,
+      "report": "evidence/legacy_certifier_report.json"
+    },
+    {
+      "suite": "verify_extensions.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 4.499807,
+      "report": "evidence/extensions_report.json"
+    },
+    {
+      "suite": "verify_isotropic_independent.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 0.11495,
+      "report": "evidence/isotropic_independent_report.json"
+    },
+    {
+      "suite": "verify_dense_regression.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 10.393206,
+      "report": "evidence/dense_regression_report.json"
+    },
+    {
+      "suite": "test_field_uniform.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 3.45067,
+      "report": "evidence/new_certifier_report.json"
+    },
+    {
+      "suite": "test_portable_witness.py",
+      "status": "PASS",
+      "returncode": 0,
+      "elapsed_seconds": 8.172549,
+      "report": "evidence/portable_witness_report.json"
+    }
+  ],
+  "suite_count": 8,
+  "total_elapsed_seconds": 30.761862,
+  "assurance": "Exact finite algebra and regression checks; not formal proof verification or independent specialist review."
+}

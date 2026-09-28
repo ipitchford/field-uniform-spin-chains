@@ -1,0 +1,85 @@
+{
+  "status": "PASS",
+  "dense_qutrit_checks": [
+    {
+      "seed": 1,
+      "coefficient_formula_matches_direct": true,
+      "obstruction_norm_squared": "50436561597/128"
+    },
+    {
+      "seed": 2,
+      "coefficient_formula_matches_direct": true,
+      "obstruction_norm_squared": "46094053341440/59049"
+    },
+    {
+      "seed": 3,
+      "coefficient_formula_matches_direct": true,
+      "obstruction_norm_squared": "23926332053598/15625"
+    }
+  ],
+  "spin_half_controls": [
+    {
+      "J": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      "old_obstruction_zero": true
+    },
+    {
+      "J": [
+        [
+          2,
+          1,
+          3
+        ],
+        [
+          1,
+          5,
+          2
+        ],
+        [
+          3,
+          2,
+          7
+        ]
+      ],
+      "old_obstruction_zero": true
+    },
+    {
+      "J": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "old_obstruction_zero": true
+    }
+  ],
+  "elapsed_seconds": 10.005144,
+  "arithmetic": "exact Gaussian rationals; Gram-corrected structure constants",
+  "runner_elapsed_seconds": 10.393206
+}

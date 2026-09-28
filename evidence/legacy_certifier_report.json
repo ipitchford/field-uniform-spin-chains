@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "checks": [
+    "integer witness receives the full local-commutant certificate",
+    "repeated squared eigenvalue correctly withholds short-charge classification",
+    "nonzero obstruction without full interaction rank remains inconclusive",
+    "scalar orthonormal coupling gives zero obstruction and an inconclusive result",
+    "fully dense symmetric rational coefficient matrix is certified",
+    "asymmetric input is rejected",
+    "floating-point input is rejected"
+  ],
+  "controls": {
+    "witness": "CERTIFIED_LOCAL_COMMUTANT_I_H",
+    "repeated_square": "CERTIFIED_NO_LOCAL_CHARGES_3_TO_HALF",
+    "rank_deficient": "INCONCLUSIVE",
+    "scalar_interaction": "INCONCLUSIVE",
+    "fully_dense": "CERTIFIED_LOCAL_COMMUTANT_I_H"
+  },
+  "runner_elapsed_seconds": 2.598234
+}

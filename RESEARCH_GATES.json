@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "recordBoundary": "Retrospective publication intake; no claim of prospective discovery registration.",
+  "contributionMap": [
+    {
+      "claim": "Leading-rigid exact field-eliminated quotient and arbitrary-field BLBQ exclusion; symmetry averaging despite field-breaking symmetry.",
+      "unit": "statement",
+      "paperLocation": "Sections 3–5",
+      "searches": [
+        {
+          "date": "2026-09-28",
+          "query": "arbitrary site-dependent fields local conservation spin-1; symmetry averaging quotient nonintegrability",
+          "corpus": "Primary arXiv theorem/proof passages and publisher records; bounded web search"
+        }
+      ],
+      "closestPriorWork": "Hokkyo reduction; Shiraishi–Yamaguchi zero-field symmetry argument; Hokkyo–Yamaguchi–Chiba uniform uniaxial classification.",
+      "verdict": "partially-known-cited"
+    },
+    {
+      "claim": "Exact finite local linear algebra, group averaging and quasicentroid rigidity.",
+      "unit": "method",
+      "paperLocation": "Sections 2–4 and Appendix A",
+      "searches": [
+        {
+          "date": "2026-09-28",
+          "query": "arbitrary site-dependent fields local conservation spin-1; symmetry averaging quotient nonintegrability",
+          "corpus": "Primary arXiv theorem/proof passages and publisher records; bounded web search"
+        }
+      ],
+      "closestPriorWork": "Established reduction, symmetry and quasicentroid methods; novel application/field elimination is separated.",
+      "verdict": "known-cited"
+    },
+    {
+      "claim": "Two blind-family rational interactions and BLBQ factorisation.",
+      "unit": "object",
+      "paperLocation": "Sections 5,7",
+      "searches": [
+        {
+          "date": "2026-09-28",
+          "query": "arbitrary site-dependent fields local conservation spin-1; symmetry averaging quotient nonintegrability",
+          "corpus": "Primary arXiv theorem/proof passages and publisher records; bounded web search"
+        }
+      ],
+      "closestPriorWork": "Established zero-field integrable lines and AKLT result; old middle-trace obstruction fails on these examples.",
+      "verdict": "partially-known-cited"
+    }
+  ],
+  "sourcesReadInFull": [
+    {
+      "citation": "Hokkyo arXiv:2501.18400v3",
+      "usedFor": "All-range reduction",
+      "readWhat": "Setup, equations (4),(6), Theorems 1,2 and surrounding argument; not independent proof reconstruction",
+      "date": "2026-09-28",
+      "evidenceLocator": "CITATION_AUDIT.md"
+    },
+    {
+      "citation": "Shiraishi–Yamaguchi arXiv:2504.14315v4",
+      "usedFor": "Closest predecessor comparison",
+      "readWhat": "Model, theorem and correction-sector proof following (18)",
+      "date": "2026-09-28",
+      "evidenceLocator": "CITATION_AUDIT.md"
+    }
+  ],
+  "limitationTriage": [
+    {
+      "limitation": "Imprecise comparison, parameter terminology and author metadata",
+      "closingQuestion": "Can primary records and bounded prose changes resolve these?",
+      "triedOrSearched": "Compared source proof and publisher/HTML metadata; revised introduction and citation.",
+      "estimatedCost": "Bounded revision",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "General certifier only returned ranks",
+      "closingQuestion": "Can portable quotient witnesses be exported without new mathematics?",
+      "triedOrSearched": "Added dual functional or consistency vector, exact multiplication checker and tamper controls.",
+      "estimatedCost": "Bounded implementation and tests",
+      "cheap": true,
+      "decision": "CLOSED",
+      "reasonOpen": "",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "General quotient-zero/rank-deficient classification, fields on existence lines, quasilocal charges and thermalisation",
+      "closingQuestion": "Does the existing theorem imply these?",
+      "triedOrSearched": "Checked theorem assumptions and limitations; none of these extensions follows.",
+      "estimatedCost": "Separate research",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Outside the proved scope.",
+      "whyNotClosedNow": ""
+    },
+    {
+      "limitation": "Independent peer review, formal proof, exhaustive novelty and empirical impact",
+      "closingQuestion": "Do replay or supplied reviews establish these?",
+      "triedOrSearched": "Audited provenance; no independent/formal/impact evidence.",
+      "estimatedCost": "Separate assurance programme",
+      "cheap": false,
+      "decision": "OPEN",
+      "reasonOpen": "Not established; retained as separate dimensions.",
+      "whyNotClosedNow": ""
+    }
+  ],
+  "extensionScout": {
+    "by": "Codex publication intake",
+    "date": "2026-09-28",
+    "proposals": [
+      "Bounded review revisions and portable witnesses"
+    ],
+    "actions": [
+      "Implemented without new theorem claims",
+      "Broader research deferred"
+    ]
+  }
+}

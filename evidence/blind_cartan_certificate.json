@@ -1,0 +1,16 @@
+{
+  "evidence_kind": "exact recomputation report; optional portable witness proves only the quotient identity",
+  "range": "3 <= k <= floor(N/2), every periodic N >= 6",
+  "fields": "arbitrary site-dependent Hermitian on-site potentials, with no norm bound",
+  "arithmetic": "exact rational",
+  "dependency": "Hokkyo arXiv:2501.18400v3, Theorems 1 and 2, with hypotheses proved in the manuscript",
+  "determinant_J": "247726080",
+  "old_gap_norm_squared": "0",
+  "route": "field-eliminated three-site quotient",
+  "rank_T": 36,
+  "rank_augmented": 37,
+  "bond_stabilizer_rank": 16,
+  "status": "CERTIFIED_LOCAL_COMMUTANT_I_H",
+  "statement": "Exclusion holds for every chain length and all fields in the stated range.",
+  "elapsed_seconds": 1.027025
+}

@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "date": "2026-09-28",
+  "pages": 17,
+  "pdfSha256": "19d8d4ab66769cc92afc7733d8a0f349c80e051ab115fdfec1a4a35c0b7b687e",
+  "compilation": "Native compiler successful; pdfLaTeX export has no unresolved references or overfull boxes.",
+  "inspection": "All17 pages visually inspected in rendered contact sheets; final page16 licence paragraph inspected after final rebuild. Exact theorem/proof structure, references, Anonymous and DOI retained.",
+  "rawTexFindings": 0,
+  "limitation": "Producer layout inspection, not proof verification."
+}
